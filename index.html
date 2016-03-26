@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Xiaowen Jiang's Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!--test-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="tipuesearch/tipuesearch_set.js"></script>
+    <script src="tipuesearch/tipuesearch.min.js"></script>
+
+    <script src="javascript/js.js"></script>
+
+    <!--CSS for the search box-->
+    <link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+    <!--google fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+    <!--custom styles-->
+    <link type="text/css" rel="stylesheet" href="css/index.css"/>
+
+</head>
+
+
+
+<!--Body Begins-->
+<body>
+
+<!--Header Section-->
+<div class="Header row" >
+<div class="Header_title col-md-12">
+     <a class="Main_header" href="#">Xiaowen Jiang</a>
+     <p>M.S. in Computer Engineering, Rutgers University </p>
+
+</div>
+    </div>
+
+<!--Navigation Section-->
+<nav class="Nav row">
+<ul class="Main_Menu col-xs-12">
+    <li class="Menu_item"><a href="#">Home</a></li>
+    <li class="Menu_item"><a href="subpages/resume.html">About Me</a>
+        <ul class="About_dropdown dropdown">
+            <li><a id="po-resume" href="#">&diams; Resume</a></li>
+            <li><a href="#">&diams; Hobbies</a></li>
+            </ul>
+    </li>
+    <li class="Menu_item"><a href="subpages/project.html">Projects</a>
+        <ul class="Projects_dropdown dropdown">
+            <li><a   href="#">&diams; Android</a></li>
+            <li><a href="#">&diams; Computer Vision</a></li>
+        </ul>
+    </li>
+    <li class="Menu_item"><a href="#">Blog</a></li>
+    <li class="Menu_item"><a href="subpages/contact.html">Contact</a></li>
+    <li class="Menu_item">
+        <form action="index.html">
+            <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+        </form>
+    </li>
+</ul>
+
+</nav>
+
+<!--main contents-->
+<div class="Content row" id="Content">
+
+    <!--Left half-->
+    <div class="col-xs-1"></div>
+    <div class="Left_content col-xs-10 ">
+        <div class="cherryborder col-xs-7">
+            <img src="images/cherry-border2.png"/>
+            </div>
+        <div class="row">
+        <div class="slide welcome active_slide col-xs-12">
+        <div class="left-text col-xs-7">
+        <h3>Welcome</h3>
+        <p>Hello visitor! I'm a master student in ECE department of Rutgers University.
+            I'm majoring in <strong>computer engineering</strong> and interested in Android programming.
+            These days I'm learning Javascript on codeacademy and building this website.
+            Exciting!
+        </p>
+            </div>
+            <div class="right-icons col-xs-5">
+                <a href="subpages/resume.html" class="banner ">
+                    <div class="maxheight">
+                        <i class="fa fa-book fa-2x"></i>
+                        <p>About Me</p>
+                    </div>
+                </a>
+                <a href="subpages/project.html" class="banner ">
+                    <div class="maxheight">
+                        <i class="fa fa-lightbulb-o fa-2x"></i>
+                        <p>Projects</p>
+                    </div>
+                </a>
+                <a href="#" class="banner ">
+                    <div class="maxheight1">
+                        <i class="fa fa-pencil fa-2x"></i>
+                        <p>Blog</p>
+                    </div>
+                </a>
+                <a href="subpages/contact.html" class="banner ">
+                    <div class="maxheight1">
+                        <i class="fa fa-paper-plane fa-2x"></i>
+                        <p>Contact</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="slide additional col-xs-12">
+            <div class="left-text col-xs-7">
+            <h3>What's more</h3>
+            <p>
+               HTML and CSS are soooooo complicated! (Doge face)
+                Now every time when I open a website I'm impressed by the Web developer's work! It's not only software
+                development! It's art. Don't want to say more. Full of tears.
+            </p>
+            </div>
+            <div class="right-contents col-xs-5">
+                <img src="images/tao.jpeg"/>
+                <a href="docs/Resume_of_Xiaowen_Jiang.pdf">Resume</a>
+                <a href="subpages/contact.html">Contact Info</a>
+                </div>
+        </div>
+
+    </div>
+        <div class="slider-nav col-xs-12">
+            <a href="#" class="arrow-prev"><img src="images/symbols/arrow-prev.png"></a>
+            <ul class="slider-dots">
+                <li class="dot active-dot">&bull;</li>
+                <li class="dot">&bull;</li>
+            </ul>
+            <a href="#" class="arrow-next"><img src="images/symbols/arrow-next.png"></a>
+        </div>
+    </div>
+
+    <div class="col-xs-1"></div>
+</div>
+
+<!--Search Results-->
+<div class="row">
+<div class="col-xs-12">
+    <div class="col-xs-1"></div>
+    <div class="Search-result col-xs-10">
+    <div id="tipue_search_content"></div>
+    </div>
+        <div class="col-xs-1"></div>
+</div>
+</div>
+
+
+
+
+
+<!--Page footer-->
+<div class="row">
+    <div class="Footer col-xs-12">
+         <p>&copy; Xiaowen Jiang. All rights reserved.</p>
+    </div>
+</div>
+
+
+
+</body>
+</html>
