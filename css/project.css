@@ -1,0 +1,28 @@
+.description{
+    margin-top: 40px;
+    height: 460px;
+    background-color: rgba(245,203,155,0.9);
+    box-shadow: 0 0.15em 0.25em 0 rgba(0,0,0,0.25);
+}
+
+.description h3{
+    font-size: 20px;
+    color:rgba(207,15,30,0.8);
+    text-align: center;
+}
+
+.description h3 span{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.description p{
+    padding: 30px;
+    font-size: 18px;
+    font-family: Arial,Serif;
+    text-align: justify;
+}
+
+.description p a{
+    color: #2a7f55;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="../css/index.css"/>
+<link type="text/css" rel="stylesheet" href="../css/resume.css"/>
+
+<body>
+<!--Header Section-->
+<div class="Header row">
+    <div class="Header_title col-md-12">
+        <a class="Main_header" href="#">Xiaowen Jiang</a>
+        <p>M.S. in Computer Engineering, Rutgers University </p>
+
+    </div>
+</div>
+
+<!--Navigation Section-->
+<nav class="Nav row">
+    <ul class="Main_Menu col-md-12">
+        <li class="Menu_item"><a href="../index.html">Home</a></li>
+        <li class="Menu_item"><a href="#">About Me</a>
+            <ul class="About_dropdown dropdown">
+                <li><a href="#" id="po-resume">&diams; Resume</a></li>
+                <li><a href="#">&diams; Hobbies</a></li>
+            </ul>
+        </li>
+        <li class="Menu_item"><a href="project.html">Projects</a>
+            <ul class="Projects_dropdown dropdown">
+                <li><a href="#">&diams; Android</a></li>
+                <li><a href="#">&diams; Computer Vision</a></li>
+            </ul>
+        </li>
+        <li class="Menu_item"><a href="#">Blog</a></li>
+        <li class="Menu_item"><a href="contact.html">Contact</a></li>
+        <!--<li class="Menu_item">-->
+            <!--<form id="form">-->
+                <!--<input type="text" class = "form-text" id="search-text" placeholder="Search..." required>-->
+                <!--<input type="button" class = "form-button" value="Search">-->
+            <!--</form>-->
+        <!--</li>-->
+    </ul>
+</nav>
+
+<!--Brief Introduction-->
+<h3>Something About Me</h3>
+<div class="Intro row">
+
+    <div class="col-xs-1">
+        <button type="button" id="prev"><i class="fa fa-arrow-left"></i></button>
+    </div>
+    <div class="photocontainer col-xs-10">
+    <!--<div class="photobanner">-->
+        <ul class="photobanner">
+        <li><img class="first-img" src="../images/photobanner/rutgers2.jpg"/></li>
+        <li><img src="../images/photobanner/makerfair2.jpg"/></li>
+        <li><img src="../images/photobanner/life1.jpg"/></li>
+        <li><img src="../images/photobanner/nupt2.jpg"/></li>
+        </ul>
+    <!--</div>-->
+        </div>
+
+        <div class="col-xs-1">
+            <button type="button" id="next"><i class="fa fa-arrow-right"></i></button>
+        </div>
+</div>
+
+
+
+
+<!--Resume Table-->
+<div class="Resume row" id="Resume-here">
+    <div class="col-xs-12">
+        <section>
+            <!--Table Education-->
+            <table border="0" class="default" style="width: 80%">
+                <tr><th>::Education::</th></tr>
+                <tr>
+                    <td width="200">2014/09 - now</td>
+                    <td><a href="http://www.rutgers.edu/"><span>Rutgers University</span></a>, New Brunswick, NJ<br>
+                        M.S. in <a href="http://www.ece.rutgers.edu/"><span>Electrical and Computer Engineering</span></a>,
+                        Overall GPA: 3.72<br>
+                        <span>Core Courses</span>: Operating System, Mobile Application Engineering, Computer Vision, Web Application, Data Structure & Algorithms, Communication Networks, Computer Architecture, Programming Finance.
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200">2010/09 - 2014/06</td>
+                    <td>
+                        <a href="http://www.njupt.edu.cn/en/"><span>Nanjing University of Posts and Telecommunications</span></a>, China<br>
+                        B.S. in <a href="http://dzkx.njupt.edu.cn/"><span>Electromagnetic Field and Wireless Technology</span></a>,Overall GPA: 3.30<br>
+                    </td>
+                </tr>
+            </table>
+
+            <!--Table Skills-->
+            <table border="0" class="default" style="width: 80%">
+                <tr><th>::Technical Skills::</th></tr>
+                <tr>
+                    <td width="200">Programming Languages:</td>
+                    <td>JAVA, C++, PHP, SQL, HTML, CSS, JAVASCRIPT, MATLAB</td>
+                </tr>
+                <tr>
+                    <td width="200">Operating Systems:</td>
+                    <td>Mac, Linux (Ubuntu), Windows</td>
+                </tr>
+            </table>
+
+            <!--Table Projects-->
+            <table border="0" class="default" style="width: 80%">
+                <tr><th>::Projects</th></tr>
+                <tr>
+                    <td width="200">ESM Study on Different Lock Modes of Android System</td>
+                    <td>
+                        Programming Language:  JAVA, SQL<br>
+                        &diams; Implement the Pattern lock, PIN lock, Password lock and Swipe lock similar to the Android system locks.
+                        <br>&diams; Analyze the user’s behavior through information collected from sensors.
+
+                    </td>
+                    <td width="150">Spring 2016</td>
+                </tr>
+                <tr>
+                    <td width="200">Eaten, an Android App about Eating</td>
+                    <td>
+                        Programming Language: 	JAVA, SQL<br>
+                        &diams; Accomplished an app that allows user to search a restaurant, and set up or join dinner invitation.
+                        <br>&diams; Utilized the Foursquare, Google maps API and open-source android libraries to retrieve data and organize UI.
+                        <br>&diams; Stored user and invitation information in the MySQL database on the computer.
+                        <br>&diams; Managed communication between server and client with Socket.
+                    </td>
+                    <td width="150">Fall 2015</td>
+                </tr>
+                <tr>
+                    <td width="200">Multi-view Stereo Reconstruction & Augmented Reality</td>
+                    <td>
+                        Programming Language: C++<br>
+                        &diams; Reconstructed the 3D sparse point cloud and dense map using 8 views of a certain scene.
+                        <br>&diams; Refined the 3D points with sparse bundle adjustment method using cvsba library.
+                        <br>&diams; Inserted a cuboid with a picture on one face into the scene.
+                    </td>
+                    <td width="150">Fall 2015</td>
+                </tr>
+                <tr>
+                    <td width="200">Stock Prediction Web Application</td>
+                    <td>
+                        Programming Languages: PHP, SQL, JAVA, HTML, CSS, JAVASCRIPT
+                        <br>&diams; Designed a web application that could retrieve historical and real-time stock price from Yahoo-Finance.
+                        <br> &diams; Utilized technical indicators and neural network algorithm to give stock prediction, and store the data into MYSQL.
+                        <br>&diams; Displayed information and indicator curves on website with HTML, CSS and JAVASCRIPT.
+                    </td>
+                    <td width="150">Spring 2015</td>
+                </tr>
+            </table>
+            <!--Table Internships-->
+            <table border="0" class="default" style="width: 80%">
+                <tr><th>::Internship::</th></tr>
+                <tr>
+                    <td width="200">Shanghai Shengjoy Network Technology Co., Ltd. </td>
+                    <td>
+                        &diams; Took part in the development of a mobile game using cocos2dx platform and C++ language.
+                        <br>&diams; Focused on debugging and optimizing UI of the project.
+                    </td>
+                    <td width="150">Summer 2015</td>
+                </tr>
+                </table>
+
+            <!--Table Voluntaries-->
+            <table border="0" class="default" style="width: 80%">
+                <tr><th>::Voluntary::</th></tr>
+                <tr>
+                    <td width="200">Learn to Solder, Maker Faire, New York</td>
+                    <td>Taught activity participants to solder a kit by themselves.</td>
+                    <td width="150">Fall 2015</td>
+                </tr>
+                </table>
+        </section>
+
+        </div>
+</div>
+
+<!--Footer-->
+<div class="row">
+    <div class="Footer col-xs-12">
+        <p>&copy; Xiaowen Jiang. All rights reserved.</p>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../javascript/slider.js"></script>
+</body>
+</html>
